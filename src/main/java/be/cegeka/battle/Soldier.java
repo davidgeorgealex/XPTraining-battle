@@ -10,7 +10,6 @@ public class Soldier {
 
     public Soldier(String name) {
         Validate.isTrue(isNotBlank(name));
-cascasca
         this.name = name;
     }
 
