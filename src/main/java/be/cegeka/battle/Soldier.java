@@ -22,4 +22,8 @@ public class Soldier {
     public Weapon getWeapon() {
         return weapon;
     }
+
+    int damage() {
+        return weapon.damage();
+    }
 }
