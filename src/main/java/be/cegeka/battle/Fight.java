@@ -11,7 +11,7 @@ public class Fight {
     }
 
     public Soldier fight() {
-        if (attacker.damage() > receiver.damage()) {
+        if (attacker.damage() >= receiver.damage()) {
             return attacker;
         }
 

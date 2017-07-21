@@ -15,4 +15,15 @@ public class FightTest {
 
         assertThat(winner).isEqualToComparingFieldByField(receiver);
     }
+
+    @Test
+    public void givenTwoSoldiers_WhenTheyHaveEqualDamage_ThenAttackerWins() {
+        Soldier attacker = new Soldier("attacker", Weapon.BARE_FIST);
+        Soldier receiver = new Soldier("receiver", Weapon.BARE_FIST);
+
+        Soldier winner = new Fight(attacker, receiver).fight();
+
+        assertThat(winner).isEqualToComparingFieldByField(attacker);
+    }
+
 }
