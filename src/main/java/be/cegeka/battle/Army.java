@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Army {
 
-    List<Soldier> soldiers = Lists.newArrayList();
+    List<Soldier> soldifasfaers = Lists.newArrayList();
 
     public void enlist(Soldier soldier) {
         soldiers.add(soldier);
